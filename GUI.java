@@ -12,26 +12,22 @@ import java.awt.image.*;
 
 @SuppressWarnings({ "rawtypes", "unchecked" })
 public class GUI extends JFrame implements MyInterface{
-/**
-	 * 
-	 */
-	private static final long serialVersionUID = 1L;
+	
+     private static final long serialVersionUID = 1L;
 /////////////////////////////////////////////////////////////////////////
 ////                   2 vars                         
 /////////////////////////////////////////////////////////////////////////
-	String fileName="db1.txt"; 
-	boolean withOutLoading=false;
+     String fileName="db1.txt"; 
+     boolean withOutLoading=false;
 	
-	public void setWithOutLoading(boolean withOutLoading){
-		this.withOutLoading = withOutLoading; 
-	}
-
-
+     public void setWithOutLoading(boolean withOutLoading){
+	  this.withOutLoading = withOutLoading; 
+     }
 
 /////////////////////////////////////////////////////////////////////////
 ////                    START GUI                         
 /////////////////////////////////////////////////////////////////////////
-	MyInterface studentSolution = new StudentSolution();
+    MyInterface studentSolution = new StudentSolution();
 	
     ImageIcon myImageIcon;
     JPanel mainPanel = new JPanel();
@@ -56,7 +52,6 @@ public class GUI extends JFrame implements MyInterface{
 /////////////////////////////////////////////////////////////////////////
 ////                    END GUI                                     
 /////////////////////////////////////////////////////////////////////////
-
 
 /////////////////////////////////////////////////////////////////////////
 ////           Construct the application                          
@@ -150,8 +145,6 @@ public class GUI extends JFrame implements MyInterface{
         outputListPanel.add(outputListScrollPane, BorderLayout.CENTER);
     }
     
-    
-    
 /////////////////////////////////////////////////////////////////////////
 ////           load Picture method                    
 /////////////////////////////////////////////////////////////////////////
@@ -167,8 +160,6 @@ public class GUI extends JFrame implements MyInterface{
         } else
             loadPictureMenuItem.setState(false);
     }
-
-
 
 /////////////////////////////////////////////////////////////////////////
 ////           load txt DB method                 
@@ -210,8 +201,6 @@ public class GUI extends JFrame implements MyInterface{
 			ioe.printStackTrace();
 		}
     }
-
-
 
 /////////////////////////////////////////////////////////////////////////
 ////           update the input List method                    
