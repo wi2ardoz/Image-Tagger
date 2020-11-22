@@ -16,8 +16,8 @@ public class GUI extends JFrame implements MyInterface{
 	 * 
 	 */
 	private static final long serialVersionUID = 1L;
-	/////////////////////////////////////////////////////////////////////////
-////                   2 vars  - DONT TOUCH                          
+/////////////////////////////////////////////////////////////////////////
+////                   2 vars                         
 /////////////////////////////////////////////////////////////////////////
 	String fileName="db1.txt"; 
 	boolean withOutLoading=false;
@@ -29,7 +29,7 @@ public class GUI extends JFrame implements MyInterface{
 
 
 /////////////////////////////////////////////////////////////////////////
-////                    START GUI  - DONT TOUCH                          
+////                    START GUI                         
 /////////////////////////////////////////////////////////////////////////
 	MyInterface studentSolution = new StudentSolution();
 	
@@ -54,12 +54,12 @@ public class GUI extends JFrame implements MyInterface{
     FlowLayout flowLayout1 = new FlowLayout();
     PicturePanel picturePanel = new PicturePanel(this);
 /////////////////////////////////////////////////////////////////////////
-////                    END GUI    - DONT TOUCH                                     
+////                    END GUI                                     
 /////////////////////////////////////////////////////////////////////////
 
 
 /////////////////////////////////////////////////////////////////////////
-////           Construct the application  - DONT TOUCH                          
+////           Construct the application                          
 /////////////////////////////////////////////////////////////////////////
     public GUI() {
 
@@ -93,7 +93,7 @@ public class GUI extends JFrame implements MyInterface{
 
 
 /////////////////////////////////////////////////////////////////////////
-////           GUI method    - DONT TOUCH                     
+////           GUI method                     
 /////////////////////////////////////////////////////////////////////////
     private void jbInit() throws Exception {
         titledBorder1 = new TitledBorder("");
@@ -153,7 +153,7 @@ public class GUI extends JFrame implements MyInterface{
     
     
 /////////////////////////////////////////////////////////////////////////
-////           load Picture method    - DONT TOUCH                     
+////           load Picture method                    
 /////////////////////////////////////////////////////////////////////////
     void loadPictureMenuItem_actionPerformed(ActionEvent e) {
 
@@ -171,7 +171,7 @@ public class GUI extends JFrame implements MyInterface{
 
 
 /////////////////////////////////////////////////////////////////////////
-////           load txt DB method    - DONT TOUCH                  
+////           load txt DB method                 
 /////////////////////////////////////////////////////////////////////////
     void loadTXTMenuItem_actionPerformed(ActionEvent e) {
 		try {
@@ -214,7 +214,7 @@ public class GUI extends JFrame implements MyInterface{
 
 
 /////////////////////////////////////////////////////////////////////////
-////           update the input List method    - DONT TOUCH                     
+////           update the input List method                    
 /////////////////////////////////////////////////////////////////////////
 	public void updateInputList(Object[] inputPoints){
 		inputList = new JList(inputPoints);
@@ -261,12 +261,6 @@ public class GUI extends JFrame implements MyInterface{
 
 
 }
-
-
-
-////////////////////////////////////////////////////////////////
-////////////////DONT TOUCH THIS CLASS!!!! //////////////////////
-////////////////////////////////////////////////////////////////
 
 @SuppressWarnings("serial")
 class PicturePanel extends JPanel implements MouseListener, MouseMotionListener {
@@ -347,9 +341,7 @@ class PicturePanel extends JPanel implements MouseListener, MouseMotionListener 
         return (!tracker.isErrorAny());
     }
 }
-////////////////////////////////////////////////////////////////
-////////////////DONT TOUCH THIS CLASS!!!! //////////////////////
-////////////////////////////////////////////////////////////////
+
 class GUI_loadPictureMenuItem_actionAdapter implements java.awt.event.ActionListener {
     GUI adaptee;
 
@@ -361,9 +353,7 @@ class GUI_loadPictureMenuItem_actionAdapter implements java.awt.event.ActionList
         adaptee.loadPictureMenuItem_actionPerformed(e);
     }
 }
-////////////////////////////////////////////////////////////////
-////////////////DONT TOUCH THIS CLASS!!!! //////////////////////
-////////////////////////////////////////////////////////////////
+
 class GUI_loadTXTMenuItem_actionAdapter implements java.awt.event.ActionListener {
     GUI adaptee;
 
