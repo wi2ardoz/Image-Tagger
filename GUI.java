@@ -365,8 +365,3 @@ class GUI_loadTXTMenuItem_actionAdapter implements java.awt.event.ActionListener
         adaptee.loadTXTMenuItem_actionPerformed(e);
     }
 }
-    
-    
-    
-    
-    
